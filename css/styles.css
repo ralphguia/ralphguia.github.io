@@ -41,4 +41,5 @@ section {
 
 #arrows {
   position: center;
+  z-index: 1;
 }
