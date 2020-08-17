@@ -1,11 +1,13 @@
 h1 {
   color: white;
   text-align: left; /*TODO center*/
+  z-index: 1;
 }
 
 h2 {
   color: white;
   text-align: left; /*TODO center*/
+  z-index: 1;
 }
 
 html, body {
@@ -24,6 +26,17 @@ section {
   background-position: center center;
   background-size: cover;
   background-attachment: fixed;
+  display: grid;
+  justify-content: left;
+  position: relative;
+}
+
+#color-overlay {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: .4;
+  position: absolute;
 }
 
 #arrows {
