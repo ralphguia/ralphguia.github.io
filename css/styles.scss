@@ -1,0 +1,89 @@
+html {
+  font-family: Arial;
+  font-size: 16px;
+  color: #FFCB9A;
+  background: #116466;
+}
+
+h1 {
+  font-size: 5em; /*media screen*/
+}
+
+/*Navigation sidebar*/
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20%;
+  height: 100%;
+  background: #2C3531;
+  font-size: 0.7em;
+  
+}
+
+.nav {
+  position: relative;
+  margin: 10%;
+  text-align: right;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  
+  li {
+    position: relative;
+    margin: 3.2em 0;
+    
+    a {
+      line-height: 5em;
+      text-transform: uppercase;
+      text-decoration: none;
+      letter-spacing: 0.4em;
+      color: rgba(#FFCB9A, 0.35);
+      display: block;
+      transition: all ease-out 300ms;
+    }
+    
+    &.active a {
+      color: FFCB9A;
+    }
+    
+    &:not(.active)::after {
+      opacity: 0.2;
+    }
+    
+    &:not(.active):hover a {
+      color: rgba(#D1E8E2, 0.75);
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 0.2em;
+      background: black;
+      left: 0;
+      bottom: 0;
+      background-image: linear-gradient(to right, #FFCB9A, #116466)
+    }
+  }
+}
+
+/*Home*/
+.home {
+  position: relative;
+  margin-left: 30%;
+  margin-top: 10%;
+}
+
+#ProfileImg {
+  position: absolute;
+  width: auto;
+  height: 100%;
+  right: 4%;
+  top: 0%;
+}
